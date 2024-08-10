@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Test - Thimira Dulakshitha</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Top Small Navbar -->
+    <div class="small-navbar sticky-top">
+        <div class="container">
+            <div class="row">
+                <div class="col text-right">
+                    <a href="#">Contact</a>
+                    <a href="#">Help</a>
+                    <a href="#">Register</a>
+                    <a href="#">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white main-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/img-navbar-logo.svg" alt="Logo" width="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kids</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Unisex</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Footwear</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
+                </ul>
+                <div class="navbar-icons">
+                    <form class="form-inline position-relative">
+                        <input class="form-control search-box pl-5" type="search" placeholder="Search" aria-label="Search">
+                        <i class="ri-search-line  position-absolute search-icon"></i>
+                    </form>
+                   
+                    <i class="ri-heart-line"></i>
+                    <i class="ri-shopping-cart-line"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="#">Men</a></li>
+                <li class="breadcrumb-item"><a href="#">Footwear</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Nike Dunk Low Retro</li>
+            </ol>
+        </div>
+    </nav>
+
+    <div class="container product-page">
+        <div class="row">
+
+            <!-- Product Images Column -->
+            <div class="col-lg-5 col-md-12 product-images sticky-column position-relative">
+                <img id="mainImage" src="./images/img-product-01-slide-01.png" alt="Main Product Image" class="product-main-img">
+                <!-- Zoom Icon -->
+                <i class="ri-zoom-in-line zoom-icon position-absolute"></i>
+                <div class="product-sub-imgs">
+                    <img src="./images/img-product-01-slide-02.png" alt="Product Image 1" class="sub-img">
+                    <img src="./images/img-product-01-slide-03.png" alt="Product Image 2" class="sub-img">
+                    <img src="./images/img-product-01-slide-04.png" alt="Product Image 3" class="sub-img">
+                    <img src="./images/img-product-01-slide-05.png" alt="Product Image 4" class="sub-img">
+                </div>
+            </div>
+ 
+            <!-- Product Details Column -->
+            <div class="col-lg-4 col-md-12">
+                <h1 class="product-title">Nike Dunk Low Retro</h1>
+                <p class="product-category">Men's Shoes</p>
+                <p class="product-price">$16,580</p>
+
+                <!-- Select Color -->
+                <div class="color-selector">
+                    <p style="font-weight: 400; color: gray;">Select Color</p>
+                    <div class="color-options">
+                        <div class="color-option">
+                            <img src="./images/img-product-01-color-black.png" alt="Black">
+                            <div class="color-checkmark"></div>
+                        </div>
+                        <div class="color-option">
+                            <img src="./images/img-product-01-color-white.png" alt="White">
+                            <div class="color-checkmark"></div>
+                        </div>
+                        <div class="color-option">
+                            <img src="./images/img-product-01-color-custom.png" alt="White">
+                            <div class="color-checkmark"></div>
+                        </div>
+                    </div>
+                </div>
+
+                   <!-- Quantity Selector -->
+                   <div class="quantity-selector mt-4">
+                    <p style="font-weight: 400; color: gray;">Quantity</p>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button" id="decreaseQuantity">-</button>
+                        </div>
+                        <input type="text" class="form-control text-center" id="quantityInput" value="1" min="1">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="increaseQuantity">+</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Select Size -->
+                <div class="size-selector">
+                    <p style="font-weight: 400; color: gray;">Select Size</p>
+                    <div>
+                        <button class="btn btn-outline-secondary">M 6 </button>
+                        <button class="btn btn-outline-secondary">M 6.5 </button>
+                        <button class="btn btn-outline-secondary">M 7 </button>
+                        <button class="btn btn-outline-secondary">M 7.5</button>
+                        <button class="btn btn-outline-secondary">M 8</button>
+                        <button class="btn btn-outline-secondary">M 8.5</button>
+                        <button class="btn btn-outline-secondary">M 9</button>
+                        <button class="btn btn-outline-secondary">M 9.5</button>
+
+                        <button class="btn btn-outline-secondary">W 5 </button>
+                        <button class="btn btn-outline-secondary">W 5.5 </button>
+                        <button class="btn btn-outline-secondary">W 6 </button>
+
+                        
+                        
+                    </div>
+                </div>
+
+                <hr>
+                <a href="#" class="d-block mb-4"><i class="ri-ruler-line"></i> Size Chart</a>
+                <p>Created for the hardwood but taken to the streets, the Nike Dunk Low Retro 
+                    returns with crisp overlays <span id="dots">...</span><span id="more">  and original team colors. This basketball icon 
+                    channels '80s vibes with premium leather in the upper that looks good and 
+                    breaks in even better. Modern footwear technology helps bring the comfort 
+                    into the 21st century.</span>
+                    <span class="read-more-button" onclick="toggleReadMore()" id="readMoreBtn">Read More</span>
+                </p>
+               
+            </div>
+            
+            <!-- Buy Buttons and Description Column -->
+            <div class="col-lg-3 col-md-12">
+                <div class="buy-buttons">
+                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn btn-outline-secondary"><i class="ri-shopping-cart-line"></i>&nbsp; Add to Cart</button>
+                    <button class="btn btn-outline-secondary"><i class="ri-heart-line"></i>&nbsp; Add to Favorites</button>
+                </div>
+
+                <p class="mt-2 text-secondary">
+                    This product is excluded from site promotions and discounts.
+                </p>
+
+                <div id="accordionCustom">
+                    <div>
+                        <div class="" id="headingOne">
+                            <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Shipping and Refund
+                                </button>
+                                <i class="ri-arrow-down-s-line chevron-icon"></i>
+                            </h5>
+                        </div>
+                
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionCustom">
+                            <div class="card-body">
+                                <p>Free standard shipping on orders $50+ and free 60-day returns for Nike Members. Learn more. Return policy exclusions apply. 
+                                    <a href="http://">Learn more.</a>
+                                    <a href="http://">Return policy exclusions apply</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <hr>
+                
+                    <div>
+                        <div class="" id="headingTwo">
+                            <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Feedbacks ⭑⭑⭑⭑⭑ (1753)
+                                </button>
+                                <i class="ri-arrow-down-s-line chevron-icon"></i>
+                            </h5>
+                        </div>
+                
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionCustom">
+                            <div class="card-body">
+                                <p> christopher - Jul 29, 2024 ⭑⭑⭑⭑⭑ </p>
+                                <p>The color way of the shoe makes it very easy to match. Comfortable around the ankle, yet true to size <a href="http://">View All</a></p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <hr>
+                
+                    <div>
+                        <div class="" id="headingThree">
+                            <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    Payments
+                                </button>
+                                <i class="ri-arrow-down-s-line chevron-icon"></i>
+                            </h5>
+                        </div>
+                
+                        <!-- Add 'show' class to ensure this section is expanded -->
+                        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionCustom">
+                            <div class="card-body">
+                                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./images/img-payment-visa.svg" alt=""></a>
+                                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./images/img-payment-stripe.svg" alt=""></a>
+                                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./images/img-payment-google.svg" alt=""></a>
+                                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./images/img-payment-master.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="recommended-section container mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div>
+                <h2 class="h5">Athletic Shoes</h2>
+                <p class="subtitle text-muted">Recommended for you</p>
+            </div>
+            <a href="#" class="text-primary">See all</a>
+        </div>
+    
+        <div class="row">
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="./images/img-recommended-01.png" class="card-img-top" alt="Off-White Vulcanized Women's White And Pink Sneakers">
+                    <div class="card-body">
+                        <p class="product-title small">Off-White Vulcanized Women's White And Pink Sneakers New Size 38 US 8</p>
+                        <p class="price font-weight-bold">$289.00</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="./images/img-recommended-02.png" class="card-img-top" alt="New Hoka Arahi 6 Women's Size 10 B">
+                    <div class="card-body">
+                        <p class="product-title small">New Hoka Arahi 6 Women's Size 10 B 1123195 BWHT Black And White</p>
+                        <p class="price font-weight-bold">$135.00</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="./images/img-recommended-03.jpeg" class="card-img-top" alt="Size 8.5 Women's / 7 Men's ASICS Gel">
+                    <div class="card-body">
+                        <p class="product-title small">Size 8.5 Women's / 7 Men's ASICS Gel 1130 White Shark Skin NEW WITH BOX</p>
+                        <p class="price font-weight-bold">$129.99</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="./images/img-recommended-04.png" class="card-img-top" alt="Nike Women's Air Jordan 1 Low White">
+                    <div class="card-body">
+                        <p class="product-title small">Nike Women's Air Jordan 1 Low White Metallic Gold White CZ4776-100 Size 7</p>
+                        <p class="price font-weight-bold">$154.99</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="./images/img-recommended-05.png" class="card-img-top" alt="ALTRA Experience Shoes Black White">
+                    <div class="card-body">
+                        <p class="product-title small">ALTRA Experience Shoes Black White</p>
+                        <p class="price font-weight-bold">$75.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-3">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-12 d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center">
+                    <p class="mb-0">&copy; <span id="currentYear"></span> By Thimira Dulakshitha. All Rights Reserved.</p>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-muted">Guides</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-muted">Terms of Sale</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-muted">Terms of Use</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-muted">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="js/script.js"></script> 
+ 
+</body>
+</html>
+
